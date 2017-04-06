@@ -1,0 +1,10 @@
+<h1> All contacts <h1>
+
+<ul>
+  <% Contact.all.each do |contact| %> </li>
+    <li> <%=contact.first_name %> <%= contact.last_name if contact.email != nil %> </li>
+    <li> <%=contact.email %> </li>
+    <li> <%=contact.note %></li>
+    <p>-----------------------------------------------------------------------------------------</p>
+    <% end %>
+  </ul>

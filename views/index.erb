@@ -1,10 +1,14 @@
 <h1>Welcome to <%= @crm_app_name%>!</h1>
+<h4><%= @visit_counter%></h4>
+<h4><%= @time %></h4>
 <p>Main Menu</p>
 <ul>
-  <li><a href="/Contacts"></a>View all contacts</li>
-  <li><a href="/Add"></a>Add a contact</li>
-  <li><a href="/Delete"></a>Delete a Contact</li>
-  <li><a href="/id"></a>Locate a contact by I.D.</li>
-  <li><a href="/Search"></a>Search by Attribute</li>
+  <li><a href="/contacts">View all contacts</a></li>
+  <li><a href="/add">Add a contact</a></li>
+  <li><a href="/delete">Delete a Contact</a></li>
+  <li><a href="/id">Locate a contact by I.D.</a></li>
+  <li><a href="/search">Search by Attribute</a></li>
 
 </ul>
+
+<%= puts "Hello World" %>

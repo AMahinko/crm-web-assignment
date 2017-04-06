@@ -1,10 +1,12 @@
 <h1> All contacts <h1>
+<h2><%= @contacts_ticker%></h2>
 
 <ul>
   <% Contact.all.each do |contact| %> </li>
-    <li> <%=contact.first_name %> <%= contact.last_name if contact.email != nil %> </li>
-    <li> <%=contact.email %> </li>
-    <li> <%=contact.note %></li>
+    <li> <%=contact.first_name %> <%= contact.last_name%> || <%=contact.email %>  </li>
+    <li><i> <%=contact.note %></i></li>
     <p>-----------------------------------------------------------------------------------------</p>
     <% end %>
   </ul>
+
+  <h1><%= Contact.all.length%></h1>

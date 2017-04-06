@@ -8,10 +8,10 @@
 <ul>
   <% Contact.all.each do |contact| %> </li>
   <div class="contact_box">
-    <div class="contact_container">
+    <div class="contact_padding">
       <li> <%=contact.first_name %> <%= contact.last_name%> || <%=contact.email %>  </li>
       <p>-----------------------------------------------------------------------------------------</p>
-      <li><i> <%=contact.note %></i></li>
+      <li><i> <%=contact.note %></i>              ||                <a href="#">Edit</a>|<a href="#">Delete</a></li>
     </div>
   </div>
     <% end %>

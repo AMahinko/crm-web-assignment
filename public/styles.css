@@ -35,6 +35,9 @@ header {
 }
 
 ul {
+  /*background-color: red;*/
+  list-style: none;
+  padding: 0;
 }
 
 li {
@@ -50,4 +53,28 @@ a {
   color: white;
   text-decoration: none;
 
+}
+
+.contacts_ticker {
+  background-color: #FF69B4;
+  padding: 2px;
+}
+
+.contacts_ticker h2 {
+  padding-left: 5px;
+}
+
+.contacts_container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.contact_box {
+  background-color: aqua;
+  margin-bottom: 15px;
+  padding-left: 25px;
+}
+
+.contact_container {
+  padding: 20px;
 }
